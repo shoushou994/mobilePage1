@@ -1,0 +1,192 @@
+//清除默认样式
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@root-font-size: 100/750vw * 40;
+//背景颜色
+@body-bg-color:#eff0f4;
+//图标的颜色
+@icon-color:#656565;
+
+
+html{
+  font-size: @root-font-size;
+}
+
+body{
+  background-color: @body-bg-color;
+  //消除横向滚动条
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.outer{
+  margin: 0 27/40rem;
+}
+
+//设置顶部工具条
+.top-bar {
+  height: 174/40rem;
+  //  设置弹性盒
+  display: flex;
+  //  对齐方式
+  justify-content: space-between;
+  align-items: center;
+
+  //设置图标
+  i {
+    color: @icon-color;
+  }
+}
+//设置大图片
+.getty {
+  border-radius: 5px;
+  overflow: hidden;
+  img{
+    width: 100%;
+    vertical-align: top;
+  }
+}
+//设置按钮
+.btn-wrapper{
+  margin-top: 40/40rem;
+  height: 244/40rem;
+  //设置弹性盒
+  display: flex;
+  flex-flow: row wrap;
+  //设置间距
+  justify-content: space-between;
+  align-content: space-between;
+
+  a{
+    text-decoration: none;
+    color: #fff;
+    width: 327/40rem;
+    height: 104/40rem;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 104/40rem;
+  }
+  a:nth-child(1){
+    background-color: #f97053;
+  }
+  a:nth-child(2){
+    background-color: #c657ff;
+  }
+  a:nth-child(3){
+    background-color: #ff3971;
+  }
+  a:nth-child(4){
+    background-color: #1d92ff;
+  }
+}
+
+
+//课程列表头部导航
+  .list-head{
+    height: 120/40rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2{
+      color: #24253d;
+      font-size: 33/40rem;
+      padding-left: 10px;
+      border-left: 3px solid #3a84ff;
+    }
+
+    a{
+      color: #656565;
+      font-size: 28/40rem;
+      text-decoration: none;
+    }
+  }
+
+//课程列表内容
+  .list-content{
+    width: 720/40rem;
+    display: flex;
+    //小部分横向滚动条
+    overflow: auto;
+  }
+
+  .list-item {
+    width: 327/40rem;
+    height: 323/40rem;
+    background-color: #fff;
+    padding: 22/40rem 20/40rem 0;
+    border-radius: 5px;
+    margin-right: 24px;
+
+    .course-img {
+      width: 285/40rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h2 {
+      color: #24253d;
+      font-size: 33/40rem;
+      font-weight: normal;
+    }
+
+    .course-author {
+      display: flex;
+      align-items: center;
+
+      .avatar {
+        width: 42/40rem;
+        height: $width;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .author-name {
+        color: #969393;
+        font-size: 24/40rem;
+        margin-left: 5px;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
